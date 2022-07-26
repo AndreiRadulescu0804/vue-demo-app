@@ -8,6 +8,9 @@
             text=""
           ></ion-back-button>
         </ion-buttons>
+        <ion-buttons slot="end">
+          <slot name="actions-end"></slot>
+        </ion-buttons>
         <ion-title>{{ page_title }}</ion-title>
       </ion-toolbar>
     </ion-header>
@@ -25,9 +28,9 @@ import {
   IonContent,
   IonBackButton,
   IonButtons,
-} from '@ionic/vue'
+} from "@ionic/vue";
 export default {
-  props: ['page_title', 'previous_page_default'],
+  props: ["page_title", "previous_page_default"],
   components: {
     IonPage,
     IonHeader,
@@ -37,5 +40,5 @@ export default {
     IonBackButton,
     IonButtons,
   },
-}
+};
 </script>

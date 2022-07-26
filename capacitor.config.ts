@@ -1,10 +1,10 @@
-import { CapacitorConfig } from '@capacitor/cli';
+import { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
-  appName: 'vue-demo-app',
-  webDir: 'dist',
-  bundledWebRuntime: false
+  appId: "com.example.app",
+  appName: "vue-demo-app",
+  webDir: "public",
+  bundledWebRuntime: false,
 };
 
 export default config;
