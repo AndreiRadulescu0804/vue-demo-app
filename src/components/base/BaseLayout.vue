@@ -1,0 +1,41 @@
+<template>
+  <ion-page>
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button
+            :default-href="previous_page_default"
+            text=""
+          ></ion-back-button>
+        </ion-buttons>
+        <ion-title>{{ page_title }}</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <slot />
+    </ion-content>
+  </ion-page>
+</template>
+<script>
+import {
+  IonPage,
+  IonHeader,
+  IonTitle,
+  IonToolbar,
+  IonContent,
+  IonBackButton,
+  IonButtons,
+} from '@ionic/vue'
+export default {
+  props: ['page_title', 'previous_page_default'],
+  components: {
+    IonPage,
+    IonHeader,
+    IonTitle,
+    IonToolbar,
+    IonContent,
+    IonBackButton,
+    IonButtons,
+  },
+}
+</script>
